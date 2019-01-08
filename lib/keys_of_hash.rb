@@ -1,7 +1,7 @@
 class Hash
-  def keys_of( *arguments)
+  def keys_of(*arguments)
     keys = []
-    hash.each do |key, value|
+    self.each do |key, value|
       arguments.each do |argument|
         if argument == value
           keys.push(key)
